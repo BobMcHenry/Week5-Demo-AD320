@@ -1,13 +1,46 @@
 <html>
 
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="javascripts/myPost.js"></script>
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+    <h1>Express</h1>
+    <p>Welcome to Express</p>
+    <label for="id">id:</label><br>
+    <input type="text" id="id" name="id"><br>
+    <label for="name">name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <button onClick="sendMyStuff()">Send</button>
+
+
+
+    <script>
+        // fetch('http://localhost:3000/users')
+        //     .then(res => {
+        //         if (res.status !== 200) {
+        //             document.getElementById("mydbdata").innerHTML = "There was an error. Try again later";
+        //             throw "An error occured";
+        //         }
+        //         console.log(res);
+        //         return res.json()
+        //     })
+        //     .then(data => {
+        //         let i = 0;
+        //         let myUL = document.getElementById("mydbdata");
+        //         data.forEach(index => {
+        //             let myLI = document.createElement("li");
+        //             myLI.appendChild(document.createTextNode(index.name));
+        //             myUL.appendChild(myLI);
+
+
+        //             //myUL.append(`<li>${index.name}</li>`)
+        //         })
+        //     });
+    </script>
+
 </body>
 
 </html>
